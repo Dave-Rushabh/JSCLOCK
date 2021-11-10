@@ -40,9 +40,83 @@
             date_day = '0' + dd.getDate();
         }
 
-        if (date_month <= 9){
-            date_month = '0' + dd.getMonth();
+       // Month Description starts 
+
+        if (date_month == 0){
+
+            date_month = 'Jan';
+
         }
+
+        else if (date_month ==1){
+
+            date_month = 'Feb';
+
+        }
+
+        else if (date_month ==2){
+
+            date_month = 'Mar';
+
+        }
+
+        else if (date_month ==3){
+
+            date_month = 'Apr';
+
+        }
+
+        else if (date_month ==4){
+
+            date_month = 'May';
+
+        }
+
+        else if (date_month ==5){
+
+            date_month = 'Jun';
+
+        }
+
+        else if (date_month ==6){
+
+            date_month = 'Jul';
+
+        }
+
+        else if (date_month ==7){
+
+            date_month = 'Aug';
+
+        }
+
+        else if (date_month ==8){
+
+            date_month = 'Sep';
+
+        }
+
+        else if (date_month ==9){
+
+            date_month = 'Oct';
+
+        }
+
+        else if (date_month ==10){
+
+            date_month = 'Nov';
+
+        }
+
+        else{
+
+            date_month = 'Dec';
+
+        }
+
+        // Month Description Ends
+
+
 
         if (date_year <= 9){
             time_s = '0' + dd.getSeconds();
@@ -50,7 +124,7 @@
 
 
 
-        date_date = date_day  + '/' + (date_month+1)  + '/' + date_year;
+        date_date = date_day  + '/' + date_month  + '/' + date_year;
 
 
         
